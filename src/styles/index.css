@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.chatbot-messages {
+  background-color: #ccf;
+  margin: 0 10px -20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.chatbot-messages ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 600px;
+  max-height: 650px;
+  overflow: auto;
+}
+
+.chatbot-messages ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.chatbot-messages ul li img {
+  max-width: 35px;
+  margin-right: 10px;
+  background-color: #eef;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.chatbot-messages ul li p {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.chatbot-messages ul li p img {
+  max-width: 512px;
+  margin: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+.chatbot-messages ul li.guest img {
+  order: 2;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.chatbot-messages form {
+  margin-top: 15px;
+}
+
+.chatbot-messages form input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  background-color: #eef;
+}
+
+.chatbot-messages form input:focus {
+  box-shadow: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.chatbot-trigger {
+  text-align: right;
+}
+
+.chatbot-trigger img {
+  cursor: pointer;
+  width: 75px;
+  padding: 10px;
+  background-color: #ddf;
+  border-radius: 100%;
+  margin: 25px;
+}
